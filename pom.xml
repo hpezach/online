@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.zach.online</groupId>
+	<artifactId>online-parent</artifactId>
+	<version>1.1-SNAPSHOT</version>
+
+	<name>Estate Projects</name>
+	<url>http://maven.apache.org</url>
+	<description>
+	        Centrepoint is a basic but useful application that sets up a
+	        dashboard of project information from Maven, Archiva and
+	        Continuum.
+	    </description>
+
+	<packaging>pom</packaging>
+
+	<properties>
+
+	<project-version>1.1-SNAPSHOT</project-version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+				<groupId>org.springframework</groupId>
+	    		<artifactId>spring-webmvc</artifactId>
+	    		<version>1.2.6</version>
+		</dependency>
+		<dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+            </dependency>
+            <dependency>
+                <groupId>com.googlecode.json-simple</groupId>
+                <artifactId>json-simple</artifactId>
+                <version>1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.4</version>
+            </dependency>
+            <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+	</dependencies>
+	
+    <repositories>  
+        <repository>  
+            <id>nexus</id>  
+            <name>nexus</name>  
+            <url>http://127.0.0.1:8081/nexus/content/groups/public/</url>  
+            <releases>  
+                <enabled>true</enabled>  
+            </releases>  
+            <snapshots>  
+                <enabled>true</enabled>  
+            </snapshots>  
+        </repository>  
+    </repositories>
+
+	<pluginRepositories>  
+        <pluginRepository>  
+            <id>nexus</id>  
+            <name>nexus</name>  
+            <url>http://127.0.0.1:8081/nexus/content/groups/public/</url>  
+            <releases>  
+                <enabled>true</enabled>  
+            </releases>  
+            <snapshots>  
+                <enabled>true</enabled>  
+            </snapshots>  
+        </pluginRepository>  
+    </pluginRepositories>
+    
+    <distributionManagement>  
+        <repository>  
+            <id>user-release</id>  
+            <name>User Project Release</name>  
+            <url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url>  
+        </repository>  
+  
+        <snapshotRepository>  
+            <id>user-snapshots</id>  
+            <name>User Project SNAPSHOTS</name>  
+            <url>http://127.0.0.1:8081/nexus/content/repositories/snapshots/</url>  
+        </snapshotRepository>  
+    </distributionManagement>
+    
+    <modules>
+		<module>dao</module>
+		<module>biz</module>
+		<module>web</module>
+	</modules>
+
+</project>
