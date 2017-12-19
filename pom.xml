@@ -24,11 +24,6 @@
 	
 	<dependencies>
 		<dependency>
-				<groupId>org.springframework</groupId>
-	    		<artifactId>spring-webmvc</artifactId>
-	    		<version>1.2.6</version>
-		</dependency>
-		<dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.11</version>
@@ -43,11 +38,11 @@
                 <artifactId>fastjson</artifactId>
                 <version>1.2.4</version>
             </dependency>
-            <dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.0</version>
-		</dependency>
+          <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.1.0</version>
+      </dependency>
 	</dependencies>
 	
     <repositories>  
