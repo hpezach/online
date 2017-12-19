@@ -8,6 +8,7 @@
     <version>1.1-SNAPSHOT</version>
   </parent>
   <artifactId>assemble</artifactId>
+  <version>1.1</version>
   <packaging>war</packaging>
   <name>assemble Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -26,14 +27,11 @@
 	</build>
   
   <dependencies>
-    
-    
-    
     <dependency>
-    	<groupId>com.zach.online</groupId>
-    	<artifactId>web</artifactId>
-    	<version>${project-version}</version>
-    </dependency>
+			<groupId>com.zach.online</groupId>
+			<artifactId>web</artifactId>
+		</dependency>
+    
   </dependencies>
   
   

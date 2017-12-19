@@ -23,7 +23,23 @@
 	</properties>
 	
 	<dependencies>
-		<dependency>
+			<dependency>
+                <groupId>com.zach.online</groupId>
+                <artifactId>web</artifactId>
+                <version>${project-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zach.online</groupId>
+                <artifactId>dao</artifactId>
+                <version>${project-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zach.online</groupId>
+                <artifactId>biz</artifactId>
+                <version>${project-version}</version>
+            </dependency>
+	
+			<dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.11</version>
@@ -41,8 +57,13 @@
           <dependency>
           <groupId>javax.servlet</groupId>
           <artifactId>javax.servlet-api</artifactId>
-          <version>3.1.0</version>
+          <version>4.0.0</version>
       </dependency>
+      <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-webmvc</artifactId>
+    	<version>4.1.2.RELEASE</version>
+    </dependency>
 	</dependencies>
 	
     <repositories>  
