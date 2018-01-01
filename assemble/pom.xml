@@ -10,28 +10,15 @@
   <artifactId>assemble</artifactId>
   <version>1.1</version>
   <packaging>war</packaging>
-  <name>assemble Maven Webapp</name>
+  <name>online</name>
   <url>http://maven.apache.org</url>
-  <build>
-		<finalName>ROOT</finalName>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>tomcat-maven-plugin</artifactId>
-				<version>1.1</version>
-				<configuration>
-					<path>/</path>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
   
   <dependencies>
-    <dependency>
-			<groupId>com.zach.online</groupId>
-			<artifactId>web</artifactId>
-		</dependency>
-    
+     <dependency>
+      	<groupId>com.zach.online</groupId>
+      	<artifactId>web</artifactId>
+      	<version>${project.version}</version>
+      </dependency>
   </dependencies>
   
   
