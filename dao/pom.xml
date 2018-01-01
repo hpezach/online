@@ -8,6 +8,7 @@
     <version>1.1-SNAPSHOT</version>
   </parent>
   <artifactId>dao</artifactId>
+  <version>${project.version}</version>
   <name>dao</name>
   <url>http://maven.apache.org</url>
   <properties>
